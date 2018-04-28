@@ -1,0 +1,14 @@
+body section{
+	background: yellow;
+	width: 500px;
+	height: 350px;
+}
+h1{
+	font-size: 36pt;
+}
+h3{
+	color: blue;
+}
+p{
+	text-indent: 2em;
+}

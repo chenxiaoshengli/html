@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>表单</title>
+</head>
+<body>
+	<p>
+		账号：
+		<input type="text" name="userName" size="20" >
+		<br/>
+		<br/>
+		密码：
+		<input type="password" name="passward" size="20">
+		<p>
+			<input type="radio" name="gen" value="男" checked/>男
+			<input type="radio" name="gen" value="女"/>女
+		</p>
+		<p>
+			<input type="checkbox" name="interest" value="sports"/>运动
+			<input type="checkbox" name="interest" value="talk" checked/>聊天
+			<input type="checkbox" name="interest" value="play">玩游戏
+		</p>
+		<p>
+			<select name="爱好">
+				<option selected="selected">[选择月份]</option>
+				<option >一月</option>
+				<option >二月</option>
+			</select>
+		</p>
+		<p>
+			<form method="get" action="https://www.baidu.com">
+				<p>用户名: <input type="text" name="userName"></p>
+				<p>密码: <input type="password" name="passward"></p>
+				<input type="reset" name="butReset" value="reset按钮">
+				<input type="image" src="image/login.gif"/>
+
+			</form>
+		</p>
+		<p>
+			<textarea name="showText" cols="10" rows="5" ">文本内容</textarea>
+		</p>
+		<p>
+			<input type="submit" name="upload" value="上传">
+		</p>
+		<form action="#" method="post">
+			<p>
+			邮箱：
+			<input type="email" name="email"/>
+			<input type="submit" name="yes" value="查看">
+		</p>
+		</form>
+		<form action="#" method="post">
+			<p>
+				网址:
+				<input type="url" name="userUrl"/>
+				<input type="submit" value="查询">
+			</p>
+		</form>
+		
+
+
+	</p>
+
+
+</body>
+</html>

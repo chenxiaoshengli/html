@@ -1,0 +1,37 @@
+#nav {
+	width:300px;
+	background-color:#D7D7D7;
+	height: 400px;
+}
+.title {
+	/*background-color:#C00;*/
+	font-size:18px;
+	font-weight:bold;
+	color:#FFF;
+	text-indent:1em;
+	line-height:35px;
+
+	/*background-image:url(../image/arrow-down.gif);
+	background-repeat:no-repeat;
+	background-position:205px 10px;*/
+	background:#C00 url(../image/arrow-down.gif) 1px 10px no-repeat;
+	width: 400px;
+	height: 50px;
+}
+#nav ul li {
+	height:30px;
+	line-height:25px;
+	list-style: none;
+	background-image:url(../image/arrow-right.gif);
+	background-repeat:no-repeat;
+	background-position:205px 4px;
+}
+a {
+	font-size:14px;
+	text-decoration:none;
+	color:#000;
+}
+a:hover {
+	color:#F60;
+	text-decoration:underline;
+}

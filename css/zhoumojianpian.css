@@ -1,0 +1,59 @@
+body, ul, p, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+.header{
+	width: 340px;
+	margin: 10px auto;
+}
+.first{
+	display: inline-block;
+	margin-top:2px; 
+	padding-left: 38px;
+	line-height: 30px;
+	border:1px #e0e0e8 solid;
+	font-size: 15px;
+	width: 330px;
+	height: 30px;
+	background: url(../image/1.gif) no-repeat 11px 7px;
+}
+.second{
+	display: inline-block;
+	width: 122px;
+	height: 136px;
+
+}
+.third{
+	display: inline-block;
+	width: 200px;
+	height: 120px;
+	line-height: 20px;
+}
+.third p{
+	font-size: 12px;
+
+}
+.third a{
+	font-size: 13px;
+	line-height: 30px;
+}
+a{
+	text-decoration: none;
+}
+.forth{
+	width: 380px;
+	//margin: 0 auto;
+	margin-right: 10px;
+
+}
+.forth a{
+	float: left;
+}
+.forth span{
+	float: right;
+}
+li{
+	list-style: none;
+	font-size: 12px;
+    line-height: 30px;
+}

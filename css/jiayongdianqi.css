@@ -1,0 +1,46 @@
+#nav{
+	width: 300px;
+}
+li{
+	list-style: none;
+}
+.bigtitle{
+	font-size:18px;
+	color: white;
+	font-weight: bold;
+	line-height: 35px;
+	text-indent: 1em;
+	height:35px;
+	background: linear-gradient(to bottom,#034560,#001110);
+
+}
+.secondTitle{
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 30px;
+	height: 30px;
+	background: linear-gradient(to bottom,#123123,#234123);
+}
+.secondTitle a{
+	color: blue;
+	text-decoration: none;
+}
+.secondTitle a:hover{
+	text-decoration: underline;
+}
+p{
+	
+	line-height: 26px;
+	text-indent: 1em;
+}
+p a{
+	color: #666666;
+	text-decoration: none;
+}
+p a:hover{
+	text-decoration: underline;
+	color: #F60;
+}
+li{
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>animation的使用</title>
+    <style>
+        .guanggao{
+        	position: absolute;
+            animation: spread2 2s both 0s;
+            -webkit-animation: spread2 2s both 0s;
+            -moz-animation: spread2 2s both 0s;
+            -o-animation: spread2 2s both 0s;
+        }
+        /*创建动画关键帧*/
+
+        @keyframes spread2 {
+            0%{
+               
+                right: 0;
+        top: 0;
+            }
+           
+            50%{
+              
+                right: 800px;
+        top: 700px;
+            }
+          
+            100%{
+               
+                right: 0;
+        top: 400px;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="guanggao">
+    	<a href="#"><img src="image/ad3.jpg" width="220" height="183"></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+#product{
+	width: 300px;
+
+}
+#product h1{
+	background: black;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: bold;
+	text-indent: 1em;
+	line-height: 35px;
+}
+body{
+    background-color: #D5D5D5;
+}
+#product dt:nth-of-type(1){
+	  background: url(../image/icon_01.gif) 0px 0px no-repeat;
+}

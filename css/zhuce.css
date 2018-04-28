@@ -1,0 +1,99 @@
+*{padding:0;margin:0;}
+div{
+	width: 1000px;
+
+}
+.tree{
+	position: absolute;
+	top: 200px;
+	width: 200px;
+	height: 200px;
+}
+li{
+	list-style: none;
+}
+.contact_form{
+	position: absolute;
+	width: 800px;
+	margin-left: 200px;
+	padding: 20px;
+}
+.usually{
+	height: 50px;
+	line-height: 50px;
+}
+.usually h2{
+	font-family: Georgia,Times,"Times New Toman",serif;
+}
+form li:nth-of-type(1){
+	border-bottom: 1px solid #777;
+}
+.usually input{
+
+	height: 30px;
+	width: 200px;
+}
+.special{
+	height: 50px;
+	line-height: 50px;
+}
+form li:nth-of-type(2) input{
+	margin-left: 100px;
+}
+form li:nth-of-type(3) input{
+	margin-left: 67.3px;
+}
+form li:nth-of-type(4) input{
+	margin-left: 100px;
+}
+form li:nth-of-type(6) input{
+	margin-left: 100px;
+}
+form li:nth-of-type(5) input:nth-of-type(1){
+	margin-left: 100px;
+}
+form li:nth-of-type(5) input:nth-of-type(2){
+	margin-left: 50px;
+}
+form li:nth-of-type(7) input{
+	margin-left: 67.3px;
+}
+form li textarea{
+	width:200;
+	height:200px;
+	margin-left: 67.3px;
+}
+.usually2{
+	padding-top: 20px;
+
+	width: 700px;
+	height: 250px;
+}
+.usually2 span{
+	vertical-align:top;
+}
+.submit{
+	width: 100px;
+	height: 40px;
+	background: #66ffff;
+	margin-left: 136px;
+
+}
+.usually input:focus,.usually2 textarea:focus{
+	border:1px solid #555;
+	box-shadow: 0 0 5px #aaa;
+	padding-right: 70px;
+}
+.usually input:focus:invalid{
+	background: #fff url(../image/wrong.png) no-repeat 98% center;
+	box-shadow: 0 0 10px #330066;
+	
+	border-color: #330066;
+	background-size: 15px 15px;
+}
+.usually input:required:valid{
+	background:#fff url(../image/right.png) no-repeat 98% center;
+	box-shadow: 0 0 5px orange;
+	border-color: orange;
+	background-size: 15px 15px;
+}

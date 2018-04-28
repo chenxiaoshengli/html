@@ -1,0 +1,100 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.main{
+	width: 750px;
+	margin: 0 auto;
+}
+.leftLine{
+	width: 220px;
+	float: left;
+	background: #000000;
+	padding: 15px;
+}
+.leftLine .head{
+	padding-top: 20px;
+	
+	width: 220px;
+	text-align: center;
+}
+.leftLine .head img{
+	width: 150px;
+	height: 150px;
+	border: 2px #ffffff solid;
+	border-radius: 75px;
+	overflow: hidden;
+}
+.leftLine .container{
+	width: 220px;
+}
+.line1 img{
+	float: left;
+}
+.line1 h2{
+	font-size: 20px;
+	color: #ffffff;
+	line-height: 40px;
+	display: inline-block;
+	float: left;
+}
+.line1 dt{
+	height: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.line1 p{
+	color: #9E9E9E;
+	font-size: 14px;
+	line-height: 25px;
+	
+}
+.rightLine{
+	width: 430px;
+	height: 807px;
+	border: 1px #E7DF8C solid;
+	border-left: 0;
+	padding: 20px;
+	float: left;
+}
+.rightLine .header{
+	text-align: center;
+}
+.rightLine .header h1{
+	display: block;
+	border-bottom: 5px #000000 solid;
+
+}
+.line2 img{
+	float: left;
+}
+.line2 h2{
+	font-size: 20px;
+	color: #000000;
+	line-height: 40px;
+	display: inline-block;
+	float: left;
+}
+.line2 dt{
+	height: 40px;
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+.line2 p{
+	color: #000000;
+	font-size: 14px;
+	line-height: 25px;
+}
+.line2 li{
+	width: 200px;
+	height: 50px;
+	display: inline-block;
+}
+.line2 li img{
+	float: left;
+}
+.line2 li span{
+	font-size: 14px;
+	line-height: 25px;
+	float: left;
+}

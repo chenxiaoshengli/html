@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		now=new Date();
+		localtime=now.toString();
+		utctime=now.toGMTString();
+		hours=now.getHours();
+		mins=now.getMinutes();
+		secs=now.getSeconds();
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("<h1>我的第一个Web页面</h1><p>我的第一个段落</p>")
+		document.write("<p>"+localtime+"(中国标准时间)</p>");
+		document.write("<p>"+utctime+"</p>");
+		document.write(""+hours+":"+mins+":"+secs+"");
+	</script>
+</body>
+</html>

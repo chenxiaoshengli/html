@@ -1,0 +1,109 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-size:12px;
+	font-family:Verdana,"宋体";
+	line-height:25px;
+}
+ul, li {
+	list-style:none;
+}
+a {
+	text-decoration:none;
+	color:#7B7B7B;
+}
+a:hover {
+	text-decoration:underline;
+	color:#7B7B7B;
+}
+.main{
+	width: 1000px;
+	margin: 0 auto;
+
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.header{
+
+	height: 62px;
+	width: 1000px;
+	position: relative;
+}
+.logo{
+	position: absolute;
+	bottom:0px;
+	left: 0px;
+}
+.header ul{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	border:1px #c8ece3 solid;
+	border-bottom:0px;
+	background:#eafffa;
+	float: right;
+}
+.header li{
+	line-height: 29px;
+	font-size: 12px;
+	display: inline-block;
+	padding: 5px;
+}
+.header li:nth-of-type(5){
+	position: absolute;
+	bottom: 23px;
+	right: 170px;
+}
+#menu{
+	background:url(../image/menuBg.jpg) repeat-x;
+	width: 1000px;
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+#menu a{
+	padding-right: 15px;
+	padding-left: 15px;
+	line-height: 36px;
+	color:#FFF;
+}
+.book{
+	border:1px green solid;
+	width: 1000px;
+}
+.bookheader{
+	width: 1000px;
+	height: 100px;
+	position: relative;
+}
+.title{
+	position:absolute;
+	left:-12px;
+	top:15px;
+	z-index:10;
+}
+.bookLeft{
+	float: left;
+	width: 560px;
+}
+.bookLeft dt {
+	float:left;
+	width:260px;
+	text-align:center;
+	position:relative;
+}
+.bookLeft dt .first {
+	position:absolute;
+	top:-5px;
+	left:20px;
+}
+.bookLeft dd {
+	float:left;
+	width:280px;
+	padding-top:15px;
+}

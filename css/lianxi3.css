@@ -1,0 +1,11 @@
+body section{
+	width: 500px;
+	height: 350px;
+	border-style: solid;
+	border-color: orange;
+	border-width: 5px;
+}
+#text{
+	color: red;
+	text-indent: 8em;
+}

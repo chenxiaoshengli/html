@@ -1,0 +1,12 @@
+body section{
+	width: 500px;
+	height: 350px;
+	background-color: blue;
+	border-style: solid;
+	border-color: yellow;
+	border-width: 5px;
+}
+h1{
+	color: orange;
+	text-indent: 8em;
+}

@@ -1,0 +1,13 @@
+h2{
+	font-size: 18px;
+	font-family: "楷体";
+}
+p{
+	font-size: 12px;
+	font-family: "Times New Roman","宋体";
+	line-height: 20px;
+}
+#text{
+	color: red;
+	font-weight: bold;
+}
