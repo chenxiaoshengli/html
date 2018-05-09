@@ -76,8 +76,8 @@ li, lu{
 #container .firstline .menu li{
 	background: linear-gradient(to bottom, #ffffff, #f8f8f8, #e8e8e8, #eaeaea, #f1eff0);
 	height:29px;
-	
 }
+
 #container .firstline .menu li img{
 	padding: 0 10px 0 8px;
     vertical-align: middle;
@@ -340,6 +340,10 @@ li, lu{
     padding-left: 45px;
     line-height: 27px;
 }
+#container .newsLine .news li:hover{
+	transition: all 0.5s;
+	transform: scale(1.1) translate(8px,4px);
+}
 #container .newsLine .news li a{
 	font-size: 13px;
 	color: #4D4646;
@@ -372,10 +376,11 @@ li, lu{
 #container .video li img{
 	float: left;
 	padding-right: 7px;
-	transition: all 0.5s ease-out;
+	
 }
 #container .video li img:hover{
 	transform: translate(-6px,0);
+	transition: all 0.5s ease-out;
 }
 #container .video li a{
 
