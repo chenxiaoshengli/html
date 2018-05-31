@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+		}
+		.wrapper{
+
+		}
+		body{
+			
+		}
+		ul,li{
+			list-style: none;
+		}
+		input{
+			width: 200px;
+			height: 20px;
+		}
+		li{
+			font-size: 13px;
+			line-height: 20px;
+			height: 20px;
+			width: 200px;
+			border:0.5px #cccccc solid;
+			background-color: #FFFFFF;
+		}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <input id="email-input" type="text">
+    <ul id="email-sug-wrapper" class="email-sug"></ul>
+</div>
+</body>
+<script type="text/javascript">
+	var postfixList = ['163.com', 'gmail.com', '126.com', 'qq.com', '263.net'];
+	var input = document.querySelector('#email-input');
+	var wrapper = document.querySelector('#email-sug-wrapper');
+	var index = 0;
+	var kill = 0;
+
+	$('#email-input').bind('input propertychange', function(e){
+
+		ifPrompt();
+		apPrompt();
+		changeBackground(0);
+		index = 0;
+		
+	});
+
+	function start(){
+		changeBackground(index);
+	}
+
+
+	$('#email-input').keydown(function(event){
+　　　　if(event.keyCode === 38){
+			returnBackground(index);
+　　　　　	if(index === 0)
+				index = wrapper.getElementsByTagName('li').length-1;
+			else
+				index -= 1;
+			start();
+			
+　　　　 }
+		if(event.keyCode === 40){
+			returnBackground(index);
+			if(index === wrapper.getElementsByTagName('li').length-1)
+				index = 0;
+			else
+				index += 1;  
+			start();
+		}
+		if(event.keyCode === 13){
+			input.value = $('#email-sug-wrapper').children().eq(index).text();
+			hidePrompt();
+		}
+		
+　　});
+
+
+	function getInput(){
+		return $.trim(input.value);
+	}
+
+	function apPrompt(){
+		var init = turn(getInput());
+		var child = wrapper.childNodes;
+		var flag  = 0;
+		for(var k = child.length - 1; k >= 0; k--) { 
+	 		wrapper.removeChild(child[k]); //清除
+		}
+		//console.log(init.split('@')[0]);
+		//console.log($.trim(init.split('@')[1]));
+		if (init.indexOf('@') != -1){
+			inib = $.trim(init.split('@')[0]);
+			var out = $.trim(init.split('@')[1]);
+			for(var i=0 ; i<postfixList.length ; i++){
+				if(postfixList[i].indexOf(out) === 0){
+					var li = document.createElement('li');
+					li.innerHTML = inib + '@' + postfixList[i];
+					wrapper.appendChild(li);
+					flag = 1;
+				}
+			}
+			if(flag === 0){
+				for (var i=0 ; i<postfixList.length ; i++){
+			var li = document.createElement('li');
+			li.innerHTML = inib + '@' + postfixList[i];
+			wrapper.appendChild(li);
+		}
+			}
+
+		}
+		else{
+			for (var i=0 ; i<postfixList.length ; i++){
+			var li = document.createElement('li');
+			li.innerHTML = init + '@' + postfixList[i];
+			wrapper.appendChild(li);
+		}
+		}
+		//alert('f');
+	
+	}
+
+	function ifPrompt(){
+		if(getInput() === '')
+			hidePrompt()
+		else
+			displayPrompt();
+	}
+
+	function hidePrompt(){
+		wrapper.style.display = 'none';
+	}
+
+	function displayPrompt(){
+		wrapper.style.display = 'block';
+	}
+
+	function turn(str){
+		var temp = document.createElement('div');
+		temp.textContent = str;
+		var output = temp.innerHTML;
+		temp = null;
+		return output;
+
+	}
+
+
+	$('ul li:eq(3)').focus();
+
+	function rturn(str){
+		var temp = document.createElement('div');
+		temp.innerHTML = str;
+		var output = temp.textContent;
+		temp = null;
+		return output;
+	}
+
+	wrapper.onmousedown = function(e){
+		if(e.target.nodeName.toLowerCase() === 'li'){
+			input.value = rturn(e.target.innerHTML);
+			hidePrompt();
+		}
+	}
+
+	$('#email-sug-wrapper').focus(function(e){
+		alert('f');
+		target = e.target;
+		if(target.nodeName.toLowerCase() === 'li'){
+			target.style.backgroundColor = '#F14730' ;
+		}
+	})
+
+	
+
+	function changeBackground(num){
+		$('#email-sug-wrapper').children().eq(num).css("background-color","#F14730");
+		//$('ul li:eq(0)').style.backgroundColor = '#F14730';
+	}
+
+	function returnBackground(num){
+		$('#email-sug-wrapper').children().eq(num).css("background-color","#FFFFFF")
+	}
+</script>
+</html>

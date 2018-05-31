@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.one{
+			background: url(../HTML/image/ss.jpg) no-repeat;
+			width: 480px;
+			height: 480px;
+		}
+	</style>
+</head>
+<body>
+<div class="one"></div>
+<script type="text/javascript">
+	var img = document.querySelector('.one');
+	var i=0;
+	var m=0;
+	window.onload = function(){
+
+		var id=setInterval(change,100);
+	
+	}
+	function change(){
+		if(i===17)
+			m=1;
+		if(i===0)
+			m=0;
+		if(m===0){
+			img.style.backgroundPosition = 0+"px "+(-480*i)+"px";
+			i++;
+		}
+		if(m===1){
+			i--;
+			img.style.backgroundPosition = 0+"px "+(-480*i)+"px";
+		}
+	}
+	
+	
+</script>
+</body>
+</html>

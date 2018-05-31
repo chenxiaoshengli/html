@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+function compareNumbers1(a, b)
+{
+  return a - b;
+}
+function compareNumbers2(a,b)
+{
+	return b-a;
+}
+var arr = [43, 54, 4, -4, 84, 100, 58, 27, 140];
+console.log(arr.sort(compareNumbers2))
+console.log(arr.sort(compareNumbers1));
+
+var arr2 = ['apple', 'dog', 'cat', 'car', 'zoo', 'orange', 'airplane'];
+console.log(arr2.sort(compareeare1));
+console.log(arr2.sort(compareeare2));
+function compareeare1(a,b){
+	return a > b;
+}
+function compareeare2(a,b){
+	return b>a;
+}
+
+var arr3 = [[10, 14], [16, 60], [7, 44], [26, 35], [22, 63]];
+console.log(arr3.sort(comparearray1));
+function comparearray1(a,b){
+	return b[1]-a[1];
+}
+
+var arr4 = [
+    {
+        id: 1,
+        name: 'candy',
+        value: 40
+    }, {
+        id: 2,
+        name: 'Simon',
+        value: 50
+    }, {
+        id: 3,
+        name: 'Tony',
+        value: 45
+    }, {
+        id: 4,
+        name: 'Annie',
+        value: 60
+    }
+];
+console.log(arr4.sort(comparearray2));
+
+
+function comparearray2(a,b){
+	return a.name.toLowerCase()>b.name.toLowerCase();
+}
+
+var scoreObject = {
+    "Tony": {
+        "Math": 95,
+        "English": 79,
+        "Music": 68
+    }, 
+    "Simon": {
+        "Math": 100,
+        "English": 95,
+        "Music": 98
+    }, 
+    "Annie": {
+        "Math": 54,
+        "English": 65,
+        "Music": 88
+    }
+}
+
+var arr6 = [];
+var k=0;
+console.log(scoreObject.length);
+for(var i in scoreObject){
+	arr6.push(i);
+	arr6.push(scoreObject[k][0]);
+	arr6.push(scoreObject[k][1]);
+}
+console.log(arr6);
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery.js"></script>
+	<title></title>
+</head>
+<body>
+	<input id="name" type="text">    
+	<button id="submit-btn">Submit</button>
+<script type="text/javascript">
+	var init = document.getElementById('name');
+	var btn = document.getElementById('submit-btn');
+
+	btn.onclick=function(){
+		alert(init.value);
+	}
+
+	$("input").focus(function(){
+		$("input").keyup(function(event){ 
+       switch(event.keyCode) { 
+       case 27: 
+       init.value=''; 
+       return; 
+       case 13: 
+       alert(init.value);
+       return; 
+       } 
+ })
+	})
+</script>
+</body>
+</html>

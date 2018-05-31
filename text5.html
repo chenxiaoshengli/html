@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<div>
+    <label>Number A:<input id="radio-a" type="radio" name="math-obj" value="a"></label><input id="num-a" type="text">
+    <label>Number B:<input id="radio-b" type="radio" name="math-obj" value="b"></label><input id="num-b" type="text">
+</div>
+<div>
+    <button class="bottonOne">判断当前选中的输入框输入内容是否为数字</button>
+    <button class="bottonTwo">把 A 四舍五入为 B 个小数位数的数字</button>
+    <button class="bottonThree">当前选中数字的绝对值</button>
+    <button class="bottonFour">对当前选中的数字进行上舍入</button>
+    <button class="bottonFive">对当前选中的数字进行下舍入</button>
+    <button class="bottonSix">把当前选中的数字四舍五入为最接近的整数</button>
+    <button class="bottonSeven">返回 A 和 B 中的最高值</button>
+    <button class="bottonEight">返回 A 和 B 中的最低值</button>        
+</div>
+<p id="result"></p>
+<script type="text/javascript">
+	var bottonOne = document.querySelector('.bottonOne');
+	var bottonTwo = document.querySelector('.bottonTwo');
+	var bottonThree = document.querySelector('.bottonThree');
+	var bottonFour = document.querySelector('.bottonFour');
+	var bottonFive = document.querySelector('.bottonFive');
+	var bottonSix = document.querySelector('.bottonSix');
+	var bottonSeven = document.querySelector('.bottonSeven');
+	var bottonEight = document.querySelector('.bottonEight');
+	var radioa = document.getElementById('radio-a');
+	var radiob = document.getElementById('radio-b');
+	var numa = document.getElementById('num-a');
+	var numb = document.getElementById('num-b');
+	var p = document.getElementById('result');
+	
+	bottonOne.onclick = function(){
+		if(radioa.checked === true){
+			if(!isNaN(numa.value))
+				p.innerHTML = 'A是数字';
+			else
+				p.innerHTML = 'A不是数字';
+		}
+		else{
+			if(!isNaN(numb.value))
+				p.innerHTML = 'B是数字';
+			else
+				p.innerHTML = 'B不是数字';
+		}
+	}
+
+	bottonTwo.onclick = function(){
+		var numaNum = new Number(numa.value); 
+		var numbNum = new Number(numb.value);
+		p.innerHTML = numaNum.toFixed(numbNum);
+	}
+
+	bottonThree.onclick = function(){
+		var numaNum = new Number(numa.value); 
+		var numbNum = new Number(numb.value);
+		if(radioa.checked === true){
+			p.innerHTML = Math.abs(numaNum);
+		}
+		else{
+			p.innerHTML = Math.abs(numbNum);
+		}
+	}
+
+	bottonFour.onclick = function(){
+		var numaNum = new Number(numa.value); 
+		var numbNum = new Number(numb.value);
+		if(radioa.checked === true){
+			p.innerHTML = Math.ceil(numaNum);
+		}
+		else{
+			p.innerHTML = Math.ceil(numbNum);
+		}
+	}
+
+	bottonFive.onclick = function(){
+		var numaNum = new Number(numa.value); 
+		var numbNum = new Number(numb.value);
+		if(radioa.checked === true){
+			p.innerHTML = Math.floor(numaNum);
+		}
+		else{
+			p.innerHTML = Math.floor(numbNum);
+		}
+	}
+
+	bottonSix.onclick = function(){
+		var numaNum = new Number(numa.value); 
+		var numbNum = new Number(numb.value);
+		if(radioa.checked === true){
+			p.innerHTML = Math.round(numaNum);
+		}
+		else{
+			p.innerHTML = Math.round(numbNum);
+		}
+	}
+
+	bottonSeven.onclick = function(){
+		var numaNum = new Number(numa.value); 
+		var numbNum = new Number(numb.value);
+		p.innerHTML = Math.max(numaNum,numbNum);
+	}
+	
+	bottonEight.onclick = function(){
+		var numaNum = new Number(numa.value); 
+		var numbNum = new Number(numb.value);
+		p.innerHTML = Math.min(numaNum,numbNum);
+	}
+</script>
+</body>
+</html>
