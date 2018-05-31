@@ -1,0 +1,439 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+a:hover {
+	
+	color:#7B7B7B;
+}
+li, lu{
+	list-style: none;
+}
+.main{
+	width: 1000px;
+	margin: 0 auto;
+}
+#header{
+	height: 50px;
+	width: 1000x;
+	background: linear-gradient(to bottom, #d01d3b, #d3617a);
+	border-radius: 8px;
+	position: relative;
+}
+.gameLogo{
+	position: absolute;
+	bottom: 0;
+	left: 5px;
+}
+.gameIndex{
+	position: absolute;
+	bottom: 0;
+	left: 260px;
+	width: 100px;
+	height: 40px;
+	background: white;
+	border-radius: 5px 5px 0 0;
+}
+.gameIndex span{
+	color: #d01d3b;
+	line-height: 40px;
+	font-weight: bold;
+	padding-left: 30px;
+	font-size: 15px;
+}
+#header .menu{
+	width: 180px;
+	height: 50px;
+	float: right;
+	line-height: 50px;
+}
+#header .menu li{
+	 display: inline-block;
+}
+#header .menu a,#header .menu span{
+	color: white;
+	font-size: 13px;
+}
+#container{
+	width: 1000px;
+	padding-top: 15px;
+	
+}
+.firstline{
+	width: 724px;
+	float: left;
+}
+#container .firstline .menu{
+	width: 190px;
+	float: left;
+	border:1px #cccccc solid;
+	border-radius: 5px;
+	overflow: hidden;
+}
+#container .firstline .menu li{
+	background: linear-gradient(to bottom, #ffffff, #f8f8f8, #e8e8e8, #eaeaea, #f1eff0);
+	height:29px;
+}
+
+#container .firstline .menu li img{
+	padding: 0 10px 0 8px;
+    vertical-align: middle;
+}
+#container .firstline .menu li a{
+	line-height: 29px;
+	font-size: 13px;
+	background: url("../image/rightA.png") 90% center no-repeat;
+	display: block;
+}
+#container .firstline .menu li a:hover{
+	display: block;
+	background: linear-gradient(to right,#ED9673,#CF4917);
+	text-decoration: none;
+}
+#container .firstline .gameAdver img{
+	width: 520px;
+	height: 195px;
+	margin-left: 10px;
+	margin-top: 5px;
+	border-radius: 7px;
+	overflow: hidden;
+	
+}
+#container .firstline .gameAdver{
+	width: 530px;
+	height: 200px;
+	position: relative;
+	float: left;
+}
+#container .firstline .gameAdver .code ul{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	float: left；
+}
+#container .firstline .gameAdver .code li{
+	padding: 0 6px;
+    background: #CACBC9;
+    margin: 4px;
+    border-radius: 50%;
+    float: left;
+}
+#container .firstline .gameAdver .code .active{
+	background: #B51C16;
+}
+#container .firstline .gameAdver .code .active a{
+	color: #ffffff;
+}
+#container .login{
+	float: right;
+	width: 260px;
+	
+	border:1px #cccccc solid;
+	border-radius: 6px;
+	background:#F9F9F9;
+	overflow: hidden;
+}
+#container .login h2{
+	font-size: 14px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #767373;
+}
+#container .login li{
+	padding-bottom: 16px;
+	font-size: 13px;
+	padding-left: 20px;
+
+}
+#container .login li a{
+	
+	padding-left: 30px;
+	font-size: 15px;
+}
+#container .login .logon{
+	width: 63px;
+	height: 24px;
+	background: url("../image/btnLogin.jpg") 0 center no-repeat;
+	display: block;
+	margin-left: 65px;
+}
+.secondline{
+	width: 720px;
+	height: 225px;
+	border: 1px #cccccc solid;
+	margin-top: 30px;
+	float: left;
+	border-radius: 7px;
+	overflow: hidden;
+	position: relative;
+}
+.gameTitle{
+	height: 30px;
+	width: 100%;
+	background: linear-gradient(to bottom, #ffffff, #f8f8f8, #e8e8e8, #eaeaea, #f1eff0);
+	line-height: 30px;
+}
+.gameTitle .title span{
+	font-size: 15px;
+	font-weight: bold;
+	color: #7D0808;
+	padding-left: 10px;
+	padding-right: 40px;
+	float: left;
+}
+.secondline .gameTitle li{
+	display: inline-block;
+	
+
+}
+.secondline .gameTitle li a,.secondline .gameTitle li span{
+	color: #666666;
+	font-size: 13px;
+}
+.secondline .gameone{
+	width: 322px;
+	height: 152px;
+	position: absolute;
+	border: 1px #cccccc solid;
+	left: 20px;
+	bottom: 20px;
+	border-radius: 8px;
+	padding: 5px;
+}
+.secondline .gameone .imgone{
+	padding-right: 10px;
+	float: left;
+	padding-left: 10px;
+	padding-top: 20px;
+	transition: all 0.5s ease-out;
+}
+.secondline .gameone .imgone:hover{
+	transform: translate(-12px ,0);
+	
+        
+}
+.secondline .gameone .imgone img{
+	width:128px; 
+	height:96px;
+}
+.secondline .gameone span{
+	color: #A70A0A;
+}
+.secondline .gameone p{
+	font-size: 12px;
+	line-height: 25px;
+}
+.playButton {
+    margin-top: 4px;
+}
+
+.playButton a {
+    height: 26px;
+    line-height: 26px;
+    display: inline-block;
+    padding: 0 10px;
+    border: 1px solid #c7c9cf;
+    border-radius: 4px;
+    color: #333333;
+}
+
+.playButton .active {
+    background: linear-gradient(to bottom, #87c9d9, #69b2c8, #5b9dbc, #4a87ac, #3e74a2, #396f9e, #366b9b);
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #326598;
+    margin-left: 4px;
+}
+.secondline .gametwo{
+	width: 322px;
+	height: 152px;
+	position: absolute;
+	border: 1px #cccccc solid;
+	left: 365px;
+	bottom: 20px;
+	border-radius: 8px;
+	padding: 5px;
+}
+.secondline .gametwo .imgtwo{
+	padding-right: 10px;
+	float: left;
+	padding-left: 10px;
+	padding-top: 20px;
+	transition:all 0.5s ease-out;
+}
+.secondline .gametwo .imgtwo:hover{
+	transform: translate(-12px,0);
+}
+.secondline .gametwo .imgtwo img{
+	width:128px; 
+	height:96px;
+}
+.secondline .gametwo span{
+	color: #A70A0A;
+}
+.secondline .gametwo p{
+	font-size: 12px;
+	line-height: 25px;
+}
+.secondline a:hover{
+	text-decoration: none;
+}
+.thirdline{
+	width: 720px;
+	border: 1px #cccccc solid;
+	margin-top: 30px;
+	float: left;
+	border-radius: 7px;
+	overflow: hidden;
+}
+.thirdline ul{
+	display: block;
+	margin-left: 15px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.thirdline li{
+	width: 170px;
+	height: 190px;
+	display: inline-block;
+	font-size: 12px;
+	position: relative;
+	text-align: center;
+
+}
+.thirdline li img{
+	transition: all 0.5s ease-out;
+	width: 130px;
+	height: 84px;
+}
+.thirdline li img:hover{
+	transform: translate(-12px,0);
+}
+.thirdline li p{
+	display: block;
+	margin: 0 auto;
+	
+	line-height: 26px;
+}
+#container .newsLine{
+	width: 262px;
+	border: 1px #cccccc solid;
+	margin-top: 30px;
+	float: right;
+	border-radius: 7px;
+	overflow: hidden;
+	margin-bottom: 30px;
+
+}
+#containern .newsLine .news{
+	width: 95%;
+	margin: 0 auto;
+}
+#container .newsLine .news li{
+	border-bottom: 1px #cccccc dashed;
+    height: 27px;
+    background: url(../image/rightTwo.png) 8px center no-repeat;
+    padding-left: 45px;
+    line-height: 27px;
+}
+#container .newsLine .news li:hover{
+	transition: all 0.5s;
+	transform: scale(1.1) translate(8px,4px);
+}
+#container .newsLine .news li a{
+	font-size: 13px;
+	color: #4D4646;
+}
+#container .newsLine .news .noBorder{
+	border-bottom: none;
+}
+#container .weibo{
+	width: 260px;
+	margin-bottom: 30px;
+	float: right;
+}
+#container .weibo img{
+	margin: 5px;
+}
+#container .video{
+	width: 260px;
+	border: 1px #cccccc solid;
+	float: right;
+	border-radius: 7px;
+	overflow: hidden;
+}
+#container .video li{
+	width: 95%;
+	margin: 0 auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#container .video li img{
+	float: left;
+	padding-right: 7px;
+	
+}
+#container .video li img:hover{
+	transform: translate(-6px,0);
+	transition: all 0.5s ease-out;
+}
+#container .video li a{
+
+	font-size: 12px;
+	line-height: 30px;
+	color: #2B8CCD;
+}
+#footer{
+	margin: 0 auto;
+	width: 1000px;
+	float: left;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+#footer a{
+	float: left;
+	padding-right: 11px;
+	font-size: 13px;
+	color: #2B62A5;
+}
+#footer p{
+	float: right;
+	font-size: 13px;
+	color: #666666;
+}
+.adRight {
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top: 400px;
+    animation: ad 3s both;
+}
+.icon {
+    position: absolute;
+    right: 0;
+    top: -12px;
+    background: rgba(204, 204, 204, 0.63);
+    padding: 0 4px;
+}
+.adRight img {
+    width: 100%;
+}
+@keyframes ad {
+    0% {
+        right: 0;
+        top: 0;
+    }
+    50% {
+        right: 800px;
+        top: 700px;
+    }
+    100% {
+        right: 0;
+        top: 400px;
+    }
+}
