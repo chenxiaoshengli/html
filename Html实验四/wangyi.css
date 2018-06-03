@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #262626;
+}
+header{
+	display: flex;
+	margin: 10px 0 10px 30px;
+	line-height: 35px;
+}
+section{
+	margin-left: 10px;
+	margin-top: 10px;
+	display: flex;
+	width: 600px;
+	height: 320px;
+	border: 2px #C4C4C4 solid;
+	border-radius: 5px;
+}
+form{
+	display: flex;
+
+}
+.main{
+	width: 400px;
+	margin-left: 15px;
+	display: flex;
+	flex-direction: column;
+}
+.main span{
+	font-size: 12px;
+}
+.special{
+	width: 100px !important;
+}
+span{
+	text-align: right;
+	line-height: 35px;
+}
+.name{
+	width: 120px;
+	display: flex;
+	flex-direction: column;
+
+}
+input{
+	margin: 10px 0 9.7px 0;
+}
+form .inputval{
+	
+	width: 150px;
+	height: 15px;
+	border: 1px #BFD8E9 solid;
+}
+.right{
+	width: 100%;
+	background: #E6FEE4 url(../Html实验四/images/right.png) no-repeat;
+	border: 1px #94E792 solid;
+	margin-left: 10px;
+	display: none;
+}
+.right span{
+	margin-left: 20px;
+}
+.wrong{
+	width: 100%;
+	background: #FFFAEE url(../Html实验四/images/wrong.png) no-repeat;
+	border: 1px #FF5328 solid;
+	margin-left: 10px;
+	display: none;
+}
+.wrong span{
+	margin-left: 20px;
+}
+.pleaseEmail{
+	width: 100%;
+	background-color: #FFFFE9;
+	border: 1px #FFD52A solid;
+	margin-left: 10px;
+	display: none;
+}

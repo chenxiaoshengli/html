@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="wangyi.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<title>网易</title>
+</head>
+<body>
+<header>
+	<img src="images/symbol.png" width="70px" height="35px">
+	<h1>通行证</h1>
+</header>
+<section>
+	<form>
+		<div class="name">
+			<span>通行证用户名:</span>
+			<span>登录密码:</span>
+			<span>重复登录密码:</span>
+			<span>性别:</span>
+			<span>真实姓名:</span>
+			<span>昵称:</span>
+			<span>关联手机号:</span>
+			<span>保密邮箱:</span>
+		</div>
+		<div class="main">
+			<p><input type="text" name="账户" class="inputval special"><span>@163
+			com</span><span class="right"><span>用户名输入正确</span></span></p>
+			<p>	<input type="password" name="密码" class="inputval"><span class="wrong"><span>密码长达为6-16</span></span></p>
+			<p>	<input type="password" name="确认密码" class="inputval"><span class="wrong"><span>两次密码输入不一致</span></span></p>
+		
+		</br>
+			<p><input type="radio" name="sex" value="sex" checked="checked">
+			<label>男</label>
+			<input type="radio" name="sex" value="sex">
+			<label>女</label></p>
+			
+		</br>
+			<p>	<input type="text" name="姓名" class="inputval"></p>
+			<p>	<input type="text" name="昵称" class="inputval"><span class="right"><span>昵称输入正确</span></span></p>
+			<p>	<input type="text" name="手机号" class="inputval"><span class="right"><span>关联手机输入正确</span></span></p>
+			<p><input type="text" name="邮箱" class="inputval"><span class="pleaseEmail">请输入您常用的电子邮箱</span></p>
+				<img src="images/login.png" height="30px" width="130px">
+			
+		</div>
+	</form>
+
+</section>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+	var input = $(".main input[name = '账户']");
+	var password = $(".main input[name = '密码']");
+	var confirm = $(".main input[name = '确认密码']");
+	var name = $(".main input[name = '名字']");
+	var theName = $(".main input[name = '昵称']");
+	var phoneNumber = $(".main input[name = '手机号']");
+	var email = $(".main input[name = '邮箱']");
+
+	var firstRight = $('.right:eq(0)');
+	var secondRight = $('.right:eq(1)');
+	var thirdRight = $('.right:eq(2)');
+
+	var firstWrong = $('.wrong:eq(0)');
+	var secondWrong = $('.wrong:eq(1)');
+
+	var firstEmail = $('.pleaseEmail')
+
+	input.change(function(){
+		firstRight.css('display','inline');
+	});
+
+	password.change(function(){
+		if(password.val().length>16 || password.val().length<6)
+			firstWrong.css('display','inline');
+		else
+			firstWrong.css('display','none');
+	});
+
+	confirm.change(function(){
+		if(password.val() === confirm.val())
+
+			secondWrong.css('display','none');
+		
+		
+		else
+			secondWrong.css('display','inline');
+	});
+
+	phoneNumber.change(function(){
+		thirdRight.css('display','inline');
+	});
+
+	theName.change(function(){
+		secondRight.css('display','inline');
+	});
+
+	email.change(function(){
+		firstEmail.css('display','inline');
+	});
+});
+</script>
+</html>
